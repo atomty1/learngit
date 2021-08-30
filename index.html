@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<div id="res"></div>
+	<button onclick="displayVal(0)">0</button>
+	<button onclick="displayVal(1)">1</button>
+	<button onclick="displayVal(2)">2</button>
+	<button onclick="displayVal(3)">3</button>
+	<button onclick="displayVal(4)">4</button>
+	<button onclick="displayVal(5)">5</button>
+	<button onclick="displayVal(6)">6</button>
+	<button onclick="displayVal(7)">7</button>
+	<button onclick="displayVal(8)">8</button>
+	<button onclick="displayVal(9)">9</button>
+	<button onclick="displayVal('+')">+</button>
+	<button onclick="displayVal('-')">-</button>
+	<button onclick="displayVal('/')">/</button>
+	<button onclick="displayVal('*')">*</button>
+	<button onclick="calc()">=</button>
+	<script type="text/javascript">
+		const displayVal = val=>{
+			res.innerText+=val;
+
+		}
+		const calc = ()=>{
+			res.innerText = eval(res.innerText);
+		}
+	</script>
+
+
+</body>
+</html>
